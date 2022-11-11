@@ -2,4 +2,8 @@
 
 Illustration of VoxCeleb preprocessing :
 
-[<img src="https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=Hc79sDi3f0U "Now in Android: 55")
+
+
+
+https://user-images.githubusercontent.com/36541517/201352075-00062394-a851-4ed1-9035-d7692310de84.mp4
+

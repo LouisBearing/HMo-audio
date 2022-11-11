@@ -1,6 +1,6 @@
 # HMo-audio
 
-Illustration of VoxCeleb preprocessing :
+## VoxCeleb - Ground truth dataset preprocessing illustration :
 
 
 

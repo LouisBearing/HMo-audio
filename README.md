@@ -37,13 +37,13 @@ No smoothing:
 
 https://user-images.githubusercontent.com/36541517/201353670-935b478f-67ce-4164-90bc-a894fa4e13f7.mp4
 
-Movering average frame=2
+Moving average frame=2
 
 
 https://user-images.githubusercontent.com/36541517/201353808-a04c9258-32f9-45ad-94ec-595c1bb347d9.mp4
 
 
-Movering average frame=3
+Moving average frame=3
 
 
 https://user-images.githubusercontent.com/36541517/201353821-d106284f-9065-4bd2-9980-8296c0ec49d7.mp4

@@ -1,10 +1,5 @@
 # HMo-audio
 
-<!-- <p align="center"> -->
-<video src="dataset_viz/vox/test_vid.mp4"/>
-<!-- </p> -->
+Illustration of VoxCeleb preprocessing :
 
-<img src="dataset_viz/vox/sumsum.jpg"/>
-
-<video src="dataset_viz/vox/test_vid.mp4" controls="controls" style="max-width: 730px;">
-</video>
+[<img src="https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=Hc79sDi3f0U "Now in Android: 55")

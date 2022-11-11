@@ -1,11 +1,10 @@
 # HMo-audio
 
 <!-- <p align="center"> -->
-<video src="dataset_viz/vox/id10037#xWYJB2Ua7DA#000979#001173_out_2_avg.mp4"/>
+<video src="dataset_viz/vox/test_vid.mp4"/>
 <!-- </p> -->
 
+<img src="dataset_viz/vox/sumsum.jpg"/>
 
-
-
-https://user-images.githubusercontent.com/36541517/201340810-8a8a1547-dae9-4eda-9b82-72e773a3fc33.mp4
-
+<video src="dataset_viz/vox/test_vid.mp4" controls="controls" style="max-width: 730px;">
+</video>

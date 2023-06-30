@@ -58,14 +58,17 @@ Our model was trained on sequences of 40 frames and can produce outputs of much 
 ## Additional results
 
 **Sample #1**
+
 https://github.com/LouisBearing/HMo-audio/assets/36541517/fa68d9ef-d3b1-4e65-be6f-6b11c5aa202e
 
 
 **Sample #2**
+
 https://github.com/LouisBearing/HMo-audio/assets/36541517/32d52226-6660-46d9-a59f-bacdd33aa4fb
 
 
 **Sample #3**
+
 https://github.com/LouisBearing/HMo-audio/assets/36541517/fc2bef44-da7f-4179-b00b-216996b9f724
 
 

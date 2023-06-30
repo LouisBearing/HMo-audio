@@ -9,7 +9,7 @@ The code & model weights will be released soon.
 
 Compared to previous methods, MS-Sync produces more natural head motion, and both lips and head motion are synced with the speech input thanks to a multi-scale synchrony loss.
 
-**Sample #1**
+**Sample #1 (don't forget to switch audio on)**
 
 https://github.com/LouisBearing/HMo-audio/assets/36541517/56d40da4-a917-4fd8-a746-fa460a1b8576
 

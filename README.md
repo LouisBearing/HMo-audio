@@ -1,86 +1,74 @@
-# HMo-audio
+# Multi-scale [landmark-domain] Talking Head Generation
 
-## VoxCeleb - Ground truth dataset preprocessing illustration :
+This page presents the results of our paper: "**A Comprehensive Multi-scale Approach for Speech and Dynamics Synchrony in Talking Head Generation**".
+Below are qualitative comparisons of our results on 2D landmarks with prominent previous works, generated from VoxCeleb2 test set.
 
+The code & model weights will be released soon.
 
+## Qualitative comparison
 
-https://user-images.githubusercontent.com/36541517/201352075-00062394-a851-4ed1-9035-d7692310de84.mp4
+Compared to previous methods, MS-Sync produces more natural head motion, and both lips and head motion are synced with the speech input thanks to a multi-scale synchrony loss.
 
+**Sample #1**
 
+https://github.com/LouisBearing/HMo-audio/assets/36541517/56d40da4-a917-4fd8-a746-fa460a1b8576
 
-https://user-images.githubusercontent.com/36541517/201353458-2d3f5e26-9aa0-437f-a6db-6a9fb46f088e.mp4
-
-
-
-https://user-images.githubusercontent.com/36541517/201353471-9891f61a-3c49-412e-a162-c5d108ac62b2.mp4
-
-
-
-https://user-images.githubusercontent.com/36541517/201353474-c3beef23-4cc2-4227-b8bd-077fce554ed5.mp4
+The Gif version:
+![combined](https://github.com/LouisBearing/HMo-audio/assets/36541517/8a56949d-14ac-4642-a81d-507321744721)
 
 
+**Sample #2**
 
-https://user-images.githubusercontent.com/36541517/201353479-1e88de11-adc4-405b-9ecf-713c80d3acf0.mp4
+https://github.com/LouisBearing/HMo-audio/assets/36541517/7348ea05-97a7-4180-83b1-885f1024d472
 
-
-
-https://user-images.githubusercontent.com/36541517/201353514-c8dc3125-c382-4562-b298-4fd46a05a896.mp4
-
-
-
-https://user-images.githubusercontent.com/36541517/201353522-83aa4f4c-4cab-48eb-aa22-cc27210f1354.mp4
+The Gif version:
+![combined](https://github.com/LouisBearing/HMo-audio/assets/36541517/2d86f4c8-15d1-4ba8-b3fb-90c28561179b)
 
 
-### Effects of smoothing raw detected landmarks
-
-No smoothing:
-
-https://user-images.githubusercontent.com/36541517/201353670-935b478f-67ce-4164-90bc-a894fa4e13f7.mp4
-
-Moving average frame=2
+**Sample #3**
 
 
-https://user-images.githubusercontent.com/36541517/201353808-a04c9258-32f9-45ad-94ec-595c1bb347d9.mp4
+
+https://github.com/LouisBearing/HMo-audio/assets/36541517/daced343-2b84-4888-b9c1-08b6757e674c
 
 
-Moving average frame=3
+The Gif version:
+![combined](https://github.com/LouisBearing/HMo-audio/assets/36541517/40d05574-2947-40a4-ba40-ae7cef1319d4)
 
 
-https://user-images.githubusercontent.com/36541517/201353821-d106284f-9065-4bd2-9980-8296c0ec49d7.mp4
+**Sample #4**
+
+https://github.com/LouisBearing/HMo-audio/assets/36541517/93d6cf33-1c8a-4c6f-ba56-d72c65f4b0d1
+
+The Gif version:
+![combined](https://github.com/LouisBearing/HMo-audio/assets/36541517/3a76a502-6656-4b18-afa6-cf6bb2772982)
 
 
-## SOTA method - One shot THG (Wang et al., AAAI '22)
+**Sample #5**
 
-### Audio #1
+https://github.com/LouisBearing/HMo-audio/assets/36541517/f9277e7c-967c-47e7-b617-a3cbe74e5b33
 
-https://user-images.githubusercontent.com/36541517/201532948-b2efaf27-21de-4a5e-ae8f-e48a2d3acca2.mp4
+The Gif version:
+![combined](https://github.com/LouisBearing/HMo-audio/assets/36541517/fd9eff2e-a128-407c-8ec3-a41cc063c1d0)
 
-https://user-images.githubusercontent.com/36541517/201532921-30385c3c-bb97-4f83-b827-0ec178c9f98d.mp4
 
-https://user-images.githubusercontent.com/36541517/201532919-edc4d312-b75b-49c5-8c8e-c6cbe11b8a59.mp4
+Our model was trained on sequences of 40 frames and can produce outputs of much longer duration (120 frames in the examples above). However as it is an autoregressive generation process, error may accumulate if length exceeds a certain limit.
 
-### Audio #2
 
-https://user-images.githubusercontent.com/36541517/201533025-babe4119-aa60-48d2-aa89-744d1f11d9b8.mp4
+## Additional results
 
-https://user-images.githubusercontent.com/36541517/201533033-52db4770-812a-47df-84cf-681c50c79233.mp4
+**Sample #1**
+https://github.com/LouisBearing/HMo-audio/assets/36541517/fa68d9ef-d3b1-4e65-be6f-6b11c5aa202e
 
-https://user-images.githubusercontent.com/36541517/201533037-83a12b50-283f-4f9c-bc62-356b2274a61b.mp4
 
-### Audio #3
+**Sample #2**
+https://github.com/LouisBearing/HMo-audio/assets/36541517/32d52226-6660-46d9-a59f-bacdd33aa4fb
 
-https://user-images.githubusercontent.com/36541517/201533049-9a4db636-926f-4401-845d-bf6dca9a7d95.mp4
 
-https://user-images.githubusercontent.com/36541517/201533052-b4399572-ae3c-4510-9289-db0927cc0e9e.mp4
+**Sample #3**
+https://github.com/LouisBearing/HMo-audio/assets/36541517/fc2bef44-da7f-4179-b00b-216996b9f724
 
-https://user-images.githubusercontent.com/36541517/201533054-71561dc1-1ec6-4065-b8db-09a89882ef9a.mp4
 
-### Audio #4
 
-https://user-images.githubusercontent.com/36541517/201533064-0fb238ec-8914-49d4-be00-8e80879b5777.mp4
-
-https://user-images.githubusercontent.com/36541517/201533068-7316990e-aa3c-4f61-bb47-c790b3ed70ff.mp4
-
-https://user-images.githubusercontent.com/36541517/201533071-c5f4213a-5809-4ddb-a76f-d069916db657.mp4
 
 

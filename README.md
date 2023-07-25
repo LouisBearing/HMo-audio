@@ -168,7 +168,7 @@ https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138
 https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/f02ff4e4-9800-4390-a3c8-fc624959f6bf
 
 
-**Case 2** -Also as our model generates 2D coordinates without rigid constraints some frames can be **unrealistic**, even on sequence of medium length:
+**Case 2** - Also as our model generates 2D coordinates without rigid constraints some frames can be **unrealistic**, even on sequence of medium length:
 
 https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/38f246d6-0fd4-495f-8880-e5ebe657b303
 

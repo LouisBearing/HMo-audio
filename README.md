@@ -1,7 +1,6 @@
 # Multi-scale Talking Head Generation
 
 This page presents the results of our paper: "**A Comprehensive Multi-scale Approach for Speech and Dynamics Synchrony in Talking Head Generation**".
-Below are qualitative comparisons of our results with prominent previous works, selected randomly (i.e. not cherry picked) from the VoxCeleb2 test set.
 
 The code & model weights will be released soon.
 
@@ -16,17 +15,19 @@ https://github.com/user-attachments/assets/ceac368c-d262-475d-8ef3-acfc2886d586
 
 ## Qualitative comparison with previous art
 
+Below are qualitative comparisons of our results with prominent previous works, selected randomly (i.e. not cherry picked) from the VoxCeleb2 test set.
+Hence it shows model's actual performances on a range of identities and poses.
 Compared to previous methods, MS-Sync produces more natural head motion, and both lips and head motion are synced with the speech input thanks to a multi-scale synchrony loss (don't forget to switch audio on).
+
+https://github.com/user-attachments/assets/b7f831a8-8247-4c10-bbad-705da5bb536e
 
 https://github.com/user-attachments/assets/945a70a6-4945-49a2-ae9e-014006ef09d4
 
 https://github.com/user-attachments/assets/f9da43c5-665a-45d2-bf3b-597add38e29b
 
-https://github.com/user-attachments/assets/816f00a2-1db6-4ac6-aef8-2b5ba461ac4d
-
 https://github.com/user-attachments/assets/314b15f6-e539-4767-b0a0-1d12b0d1b0b7
 
-https://github.com/user-attachments/assets/b7f831a8-8247-4c10-bbad-705da5bb536e
+https://github.com/user-attachments/assets/816f00a2-1db6-4ac6-aef8-2b5ba461ac4d
 
 https://github.com/user-attachments/assets/5618e8df-5ee9-436c-80b7-bb3956449b12
 

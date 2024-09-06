@@ -5,7 +5,16 @@ Below are qualitative comparisons of our results with prominent previous works, 
 
 The code & model weights will be released soon.
 
-## Qualitative comparison
+## Results on internet images
+
+
+https://github.com/user-attachments/assets/b13c6002-0cb5-4ec9-a0f9-76f02c7e7691
+
+
+https://github.com/user-attachments/assets/ceac368c-d262-475d-8ef3-acfc2886d586
+
+
+## Qualitative comparison with previous art
 
 Compared to previous methods, MS-Sync produces more natural head motion, and both lips and head motion are synced with the speech input thanks to a multi-scale synchrony loss (don't forget to switch audio on).
 

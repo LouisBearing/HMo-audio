@@ -1,163 +1,77 @@
-# Multi-scale [landmark-domain] Talking Head Generation
+# Multi-scale Talking Head Generation
 
 This page presents the results of our paper: "**A Comprehensive Multi-scale Approach for Speech and Dynamics Synchrony in Talking Head Generation**".
-Below are qualitative comparisons of our results on 2D landmarks with prominent previous works, generated from VoxCeleb2 test set.
+Below are qualitative comparisons of our results with prominent previous works, selected randomly (i.e. not cherry picked) from the VoxCeleb2 test set.
 
 The code & model weights will be released soon.
 
 ## Qualitative comparison
 
-Compared to previous methods, MS-Sync produces more natural head motion, and both lips and head motion are synced with the speech input thanks to a multi-scale synchrony loss.
+Compared to previous methods, MS-Sync produces more natural head motion, and both lips and head motion are synced with the speech input thanks to a multi-scale synchrony loss (don't forget to switch audio on).
 
-**Sample #1 (don't forget to switch audio on)**
+https://github.com/user-attachments/assets/945a70a6-4945-49a2-ae9e-014006ef09d4
 
-You can view in **full screen** and advance **frame by frame** to compare lips movements with Ground truth and Prajwal et al.'s state-of-the-art visual dubbing method :point_down:.
+https://github.com/user-attachments/assets/f9da43c5-665a-45d2-bf3b-597add38e29b
 
-https://github.com/LouisBearing/HMo-audio/assets/36541517/56d40da4-a917-4fd8-a746-fa460a1b8576
+https://github.com/user-attachments/assets/816f00a2-1db6-4ac6-aef8-2b5ba461ac4d
 
-We also provide the gif version to better **compare the realism of the dynamics** between different methods:
-![combined](https://github.com/LouisBearing/HMo-audio/assets/36541517/8a56949d-14ac-4642-a81d-507321744721)
+https://github.com/user-attachments/assets/314b15f6-e539-4767-b0a0-1d12b0d1b0b7
 
+https://github.com/user-attachments/assets/b7f831a8-8247-4c10-bbad-705da5bb536e
 
-**Sample #2**
+https://github.com/user-attachments/assets/5618e8df-5ee9-436c-80b7-bb3956449b12
 
-https://github.com/LouisBearing/HMo-audio/assets/36541517/7348ea05-97a7-4180-83b1-885f1024d472
+https://github.com/user-attachments/assets/c09717a9-033e-4d8d-89fd-b3e2f74aa827
 
-The Gif version:
-![combined](https://github.com/LouisBearing/HMo-audio/assets/36541517/2d86f4c8-15d1-4ba8-b3fb-90c28561179b)
+https://github.com/user-attachments/assets/80df65a8-4fd0-499c-bce8-52ccb351d7cf
 
+https://github.com/user-attachments/assets/6419aca6-9a5f-436b-affa-5f05c668eaa5
 
-**Sample #3**
+https://github.com/user-attachments/assets/6cca82cf-3106-43ec-ac20-f97fcd5d1ee1
 
+https://github.com/user-attachments/assets/72fb6c4e-be42-4c1f-9d26-0c54cef2c8ef
 
+https://github.com/user-attachments/assets/9008a447-9550-43f3-a766-a0017f18ed2d
 
-https://github.com/LouisBearing/HMo-audio/assets/36541517/daced343-2b84-4888-b9c1-08b6757e674c
+https://github.com/user-attachments/assets/7827dd7a-2204-4f47-ac70-59dd4af3d9b9
 
+https://github.com/user-attachments/assets/be181af4-2324-4f9e-807c-9689cc26c32c
 
-The Gif version:
-![combined](https://github.com/LouisBearing/HMo-audio/assets/36541517/40d05574-2947-40a4-ba40-ae7cef1319d4)
+https://github.com/user-attachments/assets/138657d4-4ca2-44d5-873e-fe14a40e9ab8
 
+https://github.com/user-attachments/assets/769faa3c-bc48-4a49-a5dd-6cb540f366bb
 
-**Sample #4**
+https://github.com/user-attachments/assets/b4ffc35b-7e39-4b5c-b512-669103ce56d5
 
-https://github.com/LouisBearing/HMo-audio/assets/36541517/93d6cf33-1c8a-4c6f-ba56-d72c65f4b0d1
+https://github.com/user-attachments/assets/5d68e961-a7ec-4b1e-bd7a-8b6228e34901
 
-The Gif version:
-![combined](https://github.com/LouisBearing/HMo-audio/assets/36541517/3a76a502-6656-4b18-afa6-cf6bb2772982)
 
 
-**Sample #5**
 
-https://github.com/LouisBearing/HMo-audio/assets/36541517/f9277e7c-967c-47e7-b617-a3cbe74e5b33
 
-The Gif version:
-![combined](https://github.com/LouisBearing/HMo-audio/assets/36541517/fd9eff2e-a128-407c-8ec3-a41cc063c1d0)
 
 
 
-## Additional results
 
-Here we present additional results. **Notice how head motion correlates with (the intensity of) the speech signal** :point_down:.
 
-Our model was trained on **sequences of 40 frames** and can produce outputs of **much longer duration** (120 frames in all examples presented on this page). However as it is an autoregressive generation process, error may accumulate if length exceeds a certain limit. We therefore also present several **failure cases** at the end.
 
-**Sample #1**
 
-https://github.com/LouisBearing/HMo-audio/assets/36541517/f194b329-9b11-40c6-a199-65018ecd99f8
 
-**Sample #2**
 
-https://github.com/LouisBearing/HMo-audio/assets/36541517/32d52226-6660-46d9-a59f-bacdd33aa4fb
 
-**Sample #3**
 
-https://github.com/LouisBearing/HMo-audio/assets/36541517/0ddce381-8939-479f-b9cb-3a5b9882038c
 
-**Sample #4**
 
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/da98a311-241c-42c8-976d-815d10df3a4c
 
-**Sample #5**
 
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/4407b1bf-7453-4d17-84f3-68df0ba6adea
 
-**Sample #6**
 
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/6decfdc1-51a8-4352-9efb-09907cd16a83
 
-**Sample #7**
 
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/ba54b549-d558-4b0c-a2ac-dda5404164c9
 
-**Sample #8**
 
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/8a13e6f9-73d1-4598-9f7f-e8b7cb89b0fb
 
-**Sample #9**
 
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/b90dc70f-23c0-497c-9170-be98b7b5f3ec
-
-**Sample #10**
-
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/3bc36684-fc6b-4658-8cb6-e7b05bbe87d1
-
-**Sample #11**
-
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/b2631b09-68bf-413a-a308-e420272bb821
-
-**Sample #12**
-
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/5d5e6999-b504-41a2-93cb-867230c95602
-
-**Sample #13**
-
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/c8be43db-a628-4db6-8e90-302507118e79
-
-**Sample #14**
-
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/be093312-d899-4381-93d1-dd9059bfdc1f
-
-**Sample #15**
-
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/0f12a930-950c-4138-b796-0baf0ccb7b2c
-
-**Sample #16**
-
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/7a77d567-f9c9-4b17-85d7-35fe03df8ac8
-
-**Sample #17**
-
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/85dff47c-e7c3-461a-a805-5d380e6037b5
-
-**Sample #18**
-
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/f9e5eb3a-1db2-4d40-92ed-8d21e787b7bb
-
-**Sample #19**
-
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/cbdddb01-3adc-4047-bed8-43b962a14fef
-
-**Sample #20**
-
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/2f20476d-119a-4648-a527-91edcdeb7f55
-
-**Sample #21**
-
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/ed57ab1c-53fb-4db0-a184-bfa894137b31
-
-**Sample #22**
-
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/b73e15d6-d01f-46b3-ab75-065ae7eb43c5
-
-**Sample #23**
-
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/9df6f13a-7356-4676-9b2f-b5bc290c1051
-
-**Sample #24**
-
-https://github.com/SomeUser654321/Multi-scale-Talking-Head-Generation/assets/138246474/b9dda2a3-6f19-4502-b8e6-4673f65e33fe
-
----
 
 ### Failure cases
 

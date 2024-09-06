@@ -10,7 +10,8 @@ The code & model weights will be released soon.
 https://github.com/user-attachments/assets/b13c6002-0cb5-4ec9-a0f9-76f02c7e7691
 
 
-https://github.com/user-attachments/assets/ceac368c-d262-475d-8ef3-acfc2886d586
+https://github.com/user-attachments/assets/e9608fd9-3794-4996-851f-527fc89b6243
+
 
 
 ## Qualitative comparison with previous art

@@ -17,9 +17,6 @@ from dataset.preprocess_audio import get_audio_feature_from_audio
 chkpt_p = 'fomm_models/vox-adv-cpk.pth.tar'
 conf_p = 'fomm_models/vox-adv-256.yaml'
 
-conf_p =  r'/mnt/c/Users/laeri/FaceGeneration/first-order-model/config/vox-adv-256.yaml'
-chkpt_p = r'/mnt/c/Users/laeri/FaceGeneration/first-order-model/models/vox-adv-cpk.pth.tar'
-
 ## Static STFT parameters
 n_pts_coord = 5
 n_pts_melspec = 20

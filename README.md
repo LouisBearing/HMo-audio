@@ -2,23 +2,36 @@
 
 This page presents the results of our paper: "**A Comprehensive Multi-scale Approach for Speech and Dynamics Synchrony in Talking Head Generation**".
 
-The code & model weights will be released soon.
+## Model evaluation
+
+### Requirements
+
+The vox-adv model and yaml config file from [FOMM](https://github.com/AliaksandrSiarohin/first-order-model) needs to be downloaded and the path to these files updated in execute_model.py (fomm_models/ directory by default).
+
+### Checkpoints
+
+Model weights and its config file can be found [here](https://drive.google.com/drive/u/0/folders/1dtNgqMLWNAkjH_wEkwJrzR9vJJ6ORwV3) and placed in a "checkpoint" directory.
+
+### Evaluation
+
+Run the file execute_model.py to evaluate the model on a directory of source images and one of driven audio files (wav format). Source image & driving audio must have the same name.
+
+  ``python execute_model.py --audio_dir <path-to-audio-dir> --img_dir <path-to-img-dir>``
+
+The model directory can be set using the optional `model_dir`, and the output directory using `out_dir`.
 
 ## Results on internet images
 
+https://github.com/user-attachments/assets/e9608fd9-3794-4996-851f-527fc89b6243
 
 https://github.com/user-attachments/assets/b13c6002-0cb5-4ec9-a0f9-76f02c7e7691
 
-
-https://github.com/user-attachments/assets/e9608fd9-3794-4996-851f-527fc89b6243
-
-
-
-## Qualitative comparison with previous art
+## Qualitative comparison with previous works
 
 Below are qualitative comparisons of our results with prominent previous works, selected randomly (i.e. not cherry picked) from the VoxCeleb2 test set.
 Hence it shows model's actual performances on a range of identities and poses.
-Compared to previous methods, MS-Sync produces more natural head motion, and both lips and head motion are synced with the speech input thanks to a multi-scale synchrony loss (don't forget to switch audio on).
+
+Compared to previous methods, MS-Sync produces more natural head motion, and both lips and head motion are synced with the speech input thanks to a multi-scale synchrony loss (audio needs to be switched on).
 
 https://github.com/user-attachments/assets/b7f831a8-8247-4c10-bbad-705da5bb536e
 
